@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import css from './ContactForm.module.css';
+import styles from './ContactForm.module.css';
 class ContactForm extends Component {
   state = {
     name: '',
@@ -18,11 +18,11 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div className={css.container}>
+      <div className={styles.container}>
         <form onSubmit={this.formSubmit}>
-          <p className={css.title}>Name</p>
+          <p className={styles.title}>Name</p>
           <input
-            className={css.input}
+            className={styles.input}
             placeholder="Jacob Mercer"
             type="text"
             name="name"
@@ -31,9 +31,9 @@ class ContactForm extends Component {
             required
             onChange={this.formChange}
           />
-          <p className={css.title}>Number</p>
+          <p className={styles.title}>Number</p>
           <input
-            className={css.input}
+            className={styles.input}
             placeholder=" 257-42-21"
             type="tel"
             name="number"
@@ -42,7 +42,7 @@ class ContactForm extends Component {
             required
             onChange={this.formChange}
           />
-          <button type="submit" className={css.btnSubmit}>
+          <button type="submit" className={styles.btnSubmit}>
             Add contact
           </button>
         </form>

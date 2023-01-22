@@ -3,7 +3,7 @@ import shortid from 'shortid';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
-import css from './App.module.css';
+import styles from './App.module.css';
 class App extends Component {
   state = {
     contacts: [
@@ -53,7 +53,7 @@ class App extends Component {
 
     return (
       <>
-        <div className={css.container}>
+        <div className={styles.container}>
           <h1>Phonebook</h1>
           <ContactForm addContacts={this.addContacts} />
           <h2>Contacts</h2>

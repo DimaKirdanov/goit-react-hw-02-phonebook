@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from './Filter.module.css';
+import styles from './Filter.module.css';
 const Filter = ({ filter }) => {
   return (
     <>
-      <p className={css.title}>Find contacts by name</p>
+      <p className={styles.title}>Find contacts by name</p>
       <input
-        className={css.input}
+        className={styles.input}
         type="text"
         name="filter"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
